@@ -46,7 +46,7 @@ class PylintCommand(setuptools.Command):
 
     def initialize_options(self):
         self.lint_packages = ""
-        self.lint_exclude_packages = "tests test"
+        self.lint_exclude_packages = ""
         self.lint_output = None
         self.lint_rcfile = self.distribution.lint_rcfile
         for longopt, params in _opts:
